@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Heart Disease Prediction</h1>
+    </header>
+
+    <section class="prediction-form">
+        <h2>Input Patient Data</h2>
+        <form id="heart-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="bp">Blood Pressure:</label>
+            <input type="number" id="bp" name="bp" required>
+
+            <label for="cholesterol">Cholesterol:</label>
+            <input type="number" id="cholesterol" name="cholesterol" required>
+
+            <label for="ekg">EKG Results:</label>
+            <input type="text" id="ekg" name="ekg" required>
+
+            <label for="st_slope">Slope of ST:</label>
+            <input type="text" id="st_slope" name="st_slope" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <h2>Prediction Result</h2>
+        <div id="output"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
